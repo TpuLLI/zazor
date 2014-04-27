@@ -145,6 +145,7 @@
 
 .top_menu li a {
   margin-left: 30px;
+  padding: 0 13px 5px 13px;
   height: 26px;
   line-height: 32px;
   text-decoration: none;
@@ -153,9 +154,13 @@
   font-family: lucida sans unicode, sans-serif;
 }
 
+.top_menu li a:first-child {
+  margin-left: 0;
+}
+
 .top_menu li a:hover {
 	height: 25px;
-	border-radius: 9px;
+	border-radius: 13px;
 	background: linear-gradient(to top, #0c3256, #206988)
 }
 
@@ -166,8 +171,17 @@
 	font-size: 11px;
 	font-weight: bold;
 	font-family: arial, sans-serif;
-	background-image: url(../img/sprite.png);
-	background-position: 0 7px;
+}
+
+.basket:before {
+  display: block;
+  content: '';
+  float: left;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/sprite.png);
+  background-position: 0 2px;
+  margin-top: 6px;
 }
 
 .basket p {
@@ -187,7 +201,6 @@
 
 
 .form_search {
-  /*margin: 0 auto;*/
   margin-left: 10px;
 	width: 908px;
 	height: 145px;
@@ -220,15 +233,9 @@
 	border: 1px solid #9c9c9d;
 	border-radius: 15px;
 	-webkit-box-shadow: 4px 3px 5px 0px #686868;
-    -moz-box-shadow: 4px 3px 5px 0px #686868;
-    box-shadow: 4px 3px 5px 0px #686868;
+  -moz-box-shadow: 4px 3px 5px 0px #686868;
+  box-shadow: 4px 3px 5px 0px #686868;
 }
-
-/*.form:after {
-  display: block;
-  content: '';
-  clear: both;
-}*/
 
 /*
   CAR_FORM
@@ -265,17 +272,35 @@
   font-family: arial, sans-serif;
 }
 
+.avto .avto_label_container {
+  width: 79px;
+  float: left;
+  margin-top: 4px;
+}
+
+.avto_label_container p {
+  margin-bottom: 8px;
+}
+
+.avto .avto_select_container {
+  width: 100px;
+  float: left;
+}
+
+.avto .avto_select_container p {
+  margin-bottom: 2px;
+}
+
 .avto span {
   color: #929da2;
 }
 
-.marka_avto select,
-.marka_avto_bus select,
-.model_avto select,
-.model_avto_bus,
-.grade,
-.grade_bus {
+.car_select{
   width: 100px;
+}
+
+.years_select {
+  width: 59px;
 }
 
 .marka_avto_bus {
