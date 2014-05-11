@@ -155,7 +155,9 @@
                 </select>
               </p>
             </div>
-            <input type="submit" value="поиск...">
+            <div>
+              <input type="submit" class="search search_1" value="поиск...">
+            </div>
           </form>
   			</div>
   			<div class="bus_form">
@@ -163,15 +165,102 @@
             <p>поиск шин</p>
           </div>
           <form class="bus_search">
-            <div class="bus_label_container">
-              <p><label class="bus_size">Размер:</label></p>
-              <p><label class="radius">R</label></p>
-              <p><label class="sezon">Сезон</label></p>
+            <div class="bus_search_container">
+              <div class="bus_label_container">
+                <p><label class="bus_size">Размер:</label></p>
+                <p><label class="radius">R</label></p>
+                <p><label class="sezon">Сезон:</label></p>
+              </div>
+              <div class="bus_label_container_form">
+                <p>
+                  <select name="bus_size_search" class="bus_size_form">
+                    <option></option>
+                    <option>145</option>
+                    <option>150</option>
+                  </select>
+                </p>
+                <p>
+                  <select name="radius_search" class="radius_form">
+                    <option></option>
+                    <option>12</option>
+                    <option>15</option>
+                  </select>
+                </p>
+                <p class="selection_of_the_season">
+                  <input type="checkbox" name="summer"> лето
+                  <input type="checkbox" name="winter"> зима
+                  <input type="checkbox" name="all_season"> всесез
+                </p>
+              </div>
+              <div class="bus_label_container_form_2">
+                <p>
+                  <span>/</span><select name="bus_size_search" class="bus_size_form">
+                    <option></option>
+                    <option>145</option>
+                    <option>150</option>
+                  </select>
+                </p>
+              </div>
+            </div>
+            <div>
+              <input type="submit" class="search search_2" value="поиск...">
             </div>
           </form>
   			</div>
   			<div class="disk_form">
-
+          <form class="disk_form_label">
+            <div class="bus_title_form">
+              <p>поиск дисков</p>
+            </div>
+            <div class="disk_form_name">
+              <p><label class="diameter_disc">Диаметр <span>диска:</span></label></p>
+              <p><label class="number_of_holes">Количество <span>крепежных отверстий:</span></label></p>
+              <p><label class="diameter_of_holes">Диаметр <span>расположения крепежных отверстий:</span></label></p>
+            </div>
+            <div class="disk_form_search">
+              <p>
+                <select name="diameter_disc_form" class="diameter_disc_search">
+                  <option></option>
+                  <option>14</option>
+                  <option>18</option>
+                </select>
+              </p>
+              <p>
+                <select name="number_of_holes_form" class="number_of_holes_sarch">
+                  <option></option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </p>
+              <p>
+                <select name="diameter_of_holes_form" class="diameter_of_holes_search">
+                  <option></option>
+                  <option>12</option>
+                  <option>15</option>
+                </select>
+              </p>
+            </div>
+            <div class="dco">
+            <p>ДЦО <span>(диаметр центрального отверстия):</span>
+              <select name="dco_form" class="dco_search">
+                <option></option>
+                <option>12</option>
+                <option>10</option>
+              </select>
+            </p>
+            <p>ЕТ</p>
+            <p><span>(вылет диска):</span>
+              <select name="et_form" class="et_search">
+                <option></option>
+                <option>12</option>
+                <option>16</option>
+              </select>
+            </p>
+            </div>
+            <div>
+              <input type="submit" class="search search_3" value="поиск...">
+            </div>
+          </form>
   			</div>
   		</div>
   	</div>

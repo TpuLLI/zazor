@@ -1,3 +1,9 @@
+@font-face {
+  font-family: lucida sans unicod;
+  src: local ("lucida sans unicod"),
+        url(fonts/lucida_sans.ttf);
+}
+
 .container {
 	width: 915px;
 	margin: 0 auto;
@@ -295,7 +301,9 @@
   margin-bottom: 2px;
 }
 
-.avto span {
+.avto span,
+.disk_form_name span,
+.dco span {
   color: #929da2;
 }
 
@@ -330,10 +338,9 @@
   margin-left: 28px;
 }
 
-input {
+.search {
   height: 13px;
   padding: 0;
-  margin-left: 335px;
   border-top: none;
   border-right: none;
   border-left: none;
@@ -346,6 +353,10 @@ input {
   font-style: italic;
   }
 
+.search.search_1 {
+  margin-left: 330px;
+}
+
 
 /*
 
@@ -354,7 +365,7 @@ input {
 */
 
 .bus_title_form {
-  margin: 0 7px 18px;
+  margin: 2px 7px 10px;
   font-family: arial black, sans-serif;
   font-size: 14px;
   color: #154467;
@@ -362,8 +373,19 @@ input {
 
 .bus_search {
   float: left;
-  width: 40px;
   margin-left: 12px;
+}
+
+.bus_search_container {
+  width: 168px;
+  height: 95px;
+}
+
+.bus_label_container {
+  width: 42px;
+  height: 92px;
+  float: left;
+  margin-top: 8px;
 }
 
 .bus_label_container p{
@@ -373,3 +395,119 @@ input {
 .bus_label_container .radius {
   margin-left: 33px;
 }
+
+.bus_search .sezon {
+  margin-left: 3px;
+}
+
+.bus_label_container_form {
+  width: 56px;
+  height: 92px;
+  float: left;
+}
+
+.bus_size_form {
+  height: 18px;
+  margin-bottom: 8px;
+}
+
+.radius_form {
+  height: 18px;
+}
+
+.selection_of_the_season {
+  font-weight: bold;
+}
+
+.selection_of_the_season input {
+  margin-bottom: 0;
+}
+
+.bus_label_container_form_2 {
+  width: 60px;
+  float: right;
+  margin-right: 10px;
+}
+
+.clear_block {
+  clear: both;
+}
+
+.search.search_2 {
+  margin-left: 115px;
+  margin-top: -9px;
+}
+
+/*
+
+  DISK_FORM
+*/
+
+.disk_form_label {
+  float: left;
+  width: 168px;
+  height: 110px;
+  border-right: 1px solid #9c9c9d;
+}
+
+.disk_form_name {
+  float: left;
+  width: 80px;
+  height: 88px;
+  margin-left: 14px;
+  margin-top: 5px;
+}
+
+.disk_form_name p {
+  font-family: lucida sans unicode, arial, sans-serif;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.disk_form_search {
+  float: left;
+  width: 60px;
+  height: 84px;
+}
+
+.diameter_disc_search {
+  width: 60px;
+  margin-bottom: 9px;
+}
+
+.number_of_holes_sarch {
+  width: 52px;
+  margin-bottom: 13px;
+}
+
+.diameter_of_holes_search {
+  width: 60px;
+}
+
+.dco {
+  width: 68px;
+  height: 100px;
+  margin-left: 180px;
+  margin-top: -20px;
+}
+
+.dco p {
+  font-size: 10px;
+  font-family: lucida sans unicode, arial, sans-serif;
+}
+
+.dco_search {
+  width: 62px;
+  margin-bottom: 5px;
+}
+
+.et_search {
+  width: 62px;
+}
+
+.search.search_3 {
+  margin-left: 200px;
+  margin-top: -2px;
+}
+
+
