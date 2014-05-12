@@ -518,6 +518,37 @@
 
 .content {
   width: 915px;
+  margin-top: 15px;
+}
+
+.left_menu {
+  width: 182px;
+  padding-top: 5px;
+}
+
+.catalog {
+  float: left;
+  width: 182px;
+  height: 27px;
+  border: 1px solid #79878d;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 3px 3px 0px #969696;
+  -moz-box-shadow: 4px 3px 3px 0px #969696;
+  box-shadow: 4px 3px 3px 0px #969696;
+}
+
+.catalog:before {
+  float: left;
+  display: block;
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/sprite.png);
+  background-position: -50px 2px;
+}
+
+.catalog p {
+  margin-left: 20px;
 }
 
 
