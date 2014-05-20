@@ -1,7 +1,7 @@
 @font-face {
-  font-family: lucida sans unicod;
+  font-family: "lucida sans unicod";
   src: local ("lucida sans unicod"),
-        url(fonts/lucida_sans.ttf);
+        url("fonts/lucida_sans.ttf");
 }
 
 .container {
